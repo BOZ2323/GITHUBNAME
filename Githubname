@@ -1,0 +1,5 @@
+#! /usr/bin/env node
+var githubName = function (){
+    if (!process.env.GITHUBNAME);
+    process.stderr.write('Ist nicht da');
+}; 
