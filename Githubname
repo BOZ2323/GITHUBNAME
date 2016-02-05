@@ -1,5 +1,7 @@
-#! /usr/bin/env node
-var githubName = function (){
-    if (!process.env.GITHUBNAME);
-    process.stderr.write('Ist nicht da');
-}; 
+if (!process.env.GITHUBNAME){
+	process.stderr.write('The variable GITHUBNAME is not set');
+} else { 
+	process.stdout.write('Hurray, ');
+	process.stdout.write(process.env.GITHUBNAME);
+	process.stdout.write('!');
+};
