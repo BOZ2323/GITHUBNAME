@@ -1,7 +1,7 @@
 if (!process.env.GITHUBNAME){
-	process.stderr.write('The variable GITHUBNAME is not set');
+	process.stderr.write('The variable GITHUBNAME is not set\n');
 } else { 
 	process.stdout.write('Hurray, ');
 	process.stdout.write(process.env.GITHUBNAME);
-	process.stdout.write('!');
+	process.stdout.write('!\n');
 };
