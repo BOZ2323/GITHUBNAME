@@ -4,10 +4,11 @@ if (process.argv.length <=2){
 	} else { 
 		process.stdout.write(process.env.GITHUBNAME);
 		process.stdout.write('\n');
-		process.stdout.write("https://github.com/"+process.env.GITHUBNAME);
+ 		process.stdout.write("https://github.com/"+process.env.GITHUBNAME);
+		process.stdout.write('\n');
 	} 
 
-} else if (process.argv[2]=="help" || "-h "){
+} else if (process.argv[2]=="--help" || process.argv[2]=="-h "){
           process.stdout.write("In order to run this program with no arguments, you have to set the variable GITHUBNAME to your Github username in bashrc.");
 	  process.stdout.write('\n');
 }
