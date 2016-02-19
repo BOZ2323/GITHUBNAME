@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 if (process.argv.length <=2){
 	if (!process.env.GITHUBNAME){
 		process.stderr.write('The variable GITHUBNAME is not set\n');
